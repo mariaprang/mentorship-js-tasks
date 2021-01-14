@@ -47,46 +47,4 @@ function loadItems() {
   it will also generate the HTML based on the bootstrap CARD element and fill it up with 
   data
   */
-  for (let index = 0; index < itemArray.length; index++) {
-    let cardDiv = document.createElement("div");
-    cardDiv.classList.add("card");
-    cardDiv.classList.add("custom-card");
-
-    let imageEl = document.createElement("img");
-    imageEl.src = itemArray[index].imageURL;
-    imageEl.classList.add("card-img-top");
-
-    let cardBody = document.createElement("div");
-    cardBody.classList.add("card-body");
-
-    let heading = document.createElement("h5");
-    heading.innerText = itemArray[index].name;
-
-    let parSection = document.createElement("p");
-    parSection.classList.add("card-text");
-    parSection.innerHTML = "Price: " + itemArray[index].price;
-
-    let cardButton = document.createElement("a");
-    cardButton.classList.add("btn");
-    cardButton.classList.add("btn-primary");
-    cardButton.href = "#";
-    cardButton.innerText = "Add to cart";
-
-    cardBody.appendChild(imageEl);
-    cardBody.appendChild(heading);
-    cardBody.appendChild(parSection);
-    cardBody.appendChild(cardButton);
-
-    cardDiv.appendChild(cardBody);
-    document.getElementById("item-container").appendChild(cardDiv);
-  }
 }
-
-// <div class="card" style="width: 18rem;">
-//   <img src="..." class="card-img-top" alt="...">
-//   <div class="card-body">
-//     <h5 class="card-title">Card title</h5>
-//     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//     <a href="#" class="btn btn-primary">Go somewhere</a>
-//   </div>
-// </div>
