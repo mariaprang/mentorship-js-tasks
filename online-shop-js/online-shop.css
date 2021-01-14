@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  padding: 50px;
+  background-color: antiquewhite;
+}
+
+.cart-wrap {
+  float: right;
+}
+
+.container {
+  max-width: 100% !important;
+  margin: 0;
+}
+
+.custom-container {
+  background-color: #dfdcdc;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.custom-card {
+  width: 18rem;
+  flex: 1 0 21%; /* explanation below */
+  margin: 5px;
+}
